@@ -1,39 +1,18 @@
 # question-25
 
-abstract class vehicle{
-}
 
 
-class autonomouscar extends vehicle {
-}
-
-abstract class parkingLot {
- parkingLot(int slotNumber) {
-        isOccupied = false;
-        this.slotNumber = slotNumber;    
-    }
-   
-    boolean isOccupied() {
-        return isOccupied;
-    }
-    
-    int getSlotNumber() {
-        return slotNumber;
-    }
-     
-    void park() {
-        isOccupied = true;
-    } 
-     
-    void unPark() {
-       isOccupied = false;
-    }
-    
-}
-
-class AutonomousCarSlot extends parkingLot {
+interface parkingLot {
  
-    AutonomousCarSlot(int slotNumber)  {
-        super(slotNumber);
-    } 
+   /** is parking lot occupied
+    boolean isEmpty() ;
+       
+    /** get the slot number 
+    int getSlotNumber();
+   
+   /** autonomous car can park
+    void park();
+        
+   
 }
+
