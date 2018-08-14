@@ -5,7 +5,7 @@
 interface parkingLot {
  
    /** is parking lot occupied
-    boolean isEmpty() ;
+   boolean isEmpty() ;
        
    /** get row number 
    int getRow();
