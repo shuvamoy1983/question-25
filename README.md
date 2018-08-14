@@ -4,7 +4,7 @@
 
 interface parkingLot {
  
-   /** is parking lot occupied
+   /** is parking lot occupied **/
    boolean isEmpty() ;
        
    /** get row number 
