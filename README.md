@@ -10,11 +10,11 @@ interface parkingLot {
        
    /** get row number **/
    
-   int getRow();
+   int [] getRow();
    
    /** get spotnumber**/
    
-   String getSpotNumber();
+   String [] getSpotNumber();
    
    /** to check the vehicle can fit or not **/
   
@@ -26,7 +26,7 @@ interface parkingLot {
    
    /** Remove vehicle from spot and notify**/
    
-   void removeVehicle();
+   boolean removeVehicle(String VeihcleType);
    
 }
 
